@@ -1,27 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
+import DraggableList from 'react-draggable-list';
 import TaskTitle from './TaskTitle';
 import TaskBar from './TaskBar';
 
 const ScheduleComponent = () => {
+  const [tasks, setTasks] = useState([
+    { id: 1, name: 'Morning Task', timeOfDay: 'MORNING' },
+    { id: 2, name: 'Afternoon Task', timeOfDay: 'AFTERNOON' },
+    { id: 3, name: 'Evening Task', timeOfDay: 'EVENING' },
+    // Add as many tasks as you need
+  ]);
+
+  const onListChange = (newList) => {
+    setTasks(newList);
+  };
+
+  const listItem = ({ item, itemSelected, dragHandle }) => {
+    return (
+      <div>
+        <TaskTitle title={item.timeOfDay} />
+        <div {...dragHandle}>
+          <TaskBar name={item.name} />
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="Schedule">
-      <TaskTitle title="MORNING" />
-      <TaskBar name="wake up" />
-      <TaskBar name="brush teeth" />
-      <TaskBar name="brush teeth" />
-
-      {/* Repeat for Afternoon and Evening */}
-      <TaskTitle title="AFTERNOON" />
-      <TaskBar name="Coffee" />
-      <TaskBar name="Work" />
-      <TaskBar name="Coffee" />
-
-      <TaskTitle title="EVENING" />
-      <TaskBar name="Go home" />
-      <TaskBar name="gym" />
-      <TaskBar name="Sleep" />    
-      
-
+      <DraggableList
+        itemKey="id"
+        template={listItem}
+        list={tasks}
+        onMoveEnd={onListChange}
+        container={() => document.body}
+      />
     </div>
   );
 };
