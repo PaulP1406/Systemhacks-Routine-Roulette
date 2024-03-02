@@ -1,9 +1,10 @@
 import React from 'react'
+import './Nav.css';
 
 const Nav = () => {
   return (
-    <div className='Nav'>Nav
-        
+    <div className='Nav'>
+        <p className='Nav-title'> Routine Roulette</p>
     </div>
   )
 }
