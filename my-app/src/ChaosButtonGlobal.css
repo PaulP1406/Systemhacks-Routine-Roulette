@@ -1,0 +1,16 @@
+.chaosBtn {
+    background-color: purple;
+    color: white;
+    padding: 20px 20px;
+    /* border: 2px solid black; */
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    height: auto;
+    width: auto;
+}
+.ChaosButtonGlobal {
+    background-color: #333;
+    color: white;
+}

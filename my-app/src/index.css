@@ -7,11 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  bacjground-color: #333;
-  /* monospace; */
-}
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #333; 
+} */
 
 .Schedule {
   background-color: grey;
@@ -20,6 +19,6 @@ code {
 
 .ChaosButtonGlobal {
   background-color: #333;
-  height: 12vh;
+  height: auto;
 }
 

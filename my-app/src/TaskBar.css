@@ -7,16 +7,16 @@
   justify-content: space-between;
   align-items: center;
 }
-.delete-btn {
+.delete-btn-btn {
   padding: 5px 10px;
-  background-color: #ff6347; /* Red background for delete button */
+  background-color: red; /* Red background for delete button */
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.delete-btn:hover {
+.delete-btn-btn:hover {
   background-color: #d9534f; /* Slightly darker red on hover */
 }
 

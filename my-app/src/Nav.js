@@ -5,10 +5,7 @@ const Nav = () => {
   return (
     <div className='Nav'>
       <button className='configBtn'>Settings</button>
-      <p className='Nav-title'> Routine Roulette</p>
-        {/* <div style={{ textAlign: 'left' }}> */}
-        
-        {/* </div> */}
+      <p className='Nav-title'> Routine Roulette, your time blocking buddy!</p>
     </div>
   )
 }

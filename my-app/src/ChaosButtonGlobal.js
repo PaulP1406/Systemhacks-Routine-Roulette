@@ -1,11 +1,12 @@
 // ChaosButtonGlobal.js
 import React from 'react';
+import './ChaosButtonGlobal.css';
 
 const ChaosButtonGlobal = ({ onShuffle }) => {
   return (
-    <div className='ChaosButtonGlobal'>
-      <button onClick={onShuffle}>CHAOS!!</button>
-    </div>
+    <footer className='ChaosButtonGlobal'>
+      {<button onClick={onShuffle} className='chaosBtn'>CHAOS</button>}
+    </footer>
   );
 };
 
