@@ -14,12 +14,15 @@ code {
 
 .Schedule {
   background-color: blue;
+  height: 76vh;
 }
 
 .ChaosButtonGlobal {
   background-color: red;
+  height: 12vh;
 }
 
 .Nav {
   background-color: gold;
+  height: 12vh;
 }
