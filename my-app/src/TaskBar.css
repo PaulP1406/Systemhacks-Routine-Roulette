@@ -1,0 +1,17 @@
+/* TaskBar.css */
+.task-bar {
+    background-color: #f0f0f0; /* Replace with the actual color from the design */
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chaos {
+    background-color: #ffc0cb; /* Replace with the actual 'chaos' color from the design */
+  }
+  
+  /* Add other styles for the chaos button when active, etc. */
+  

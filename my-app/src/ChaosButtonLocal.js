@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+//import './ChaosButtonLocal.css'; // You should create a ChaosButtonLocal.css
 
-const ChaosButtonLocal = () => {
+const ChaosButtonLocal = ({ onClick, isChaos }) => {
   return (
-    <div className='ChaosButtonLocal'>ChaosButtonLocal</div>
+    <button className={`ChaosButtonLocal ${isChaos ? 'active' : ''}`} onClick={onClick}>
+      {/* Button text or icon goes here */}
+    </button>
   )
 }
 
-export default ChaosButtonLocal
+export default ChaosButtonLocal;
