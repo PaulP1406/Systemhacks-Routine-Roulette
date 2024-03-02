@@ -1,12 +1,13 @@
 import React from 'react';
-//import './TaskTitle.css'; // You should create a TaskTitle.css
+import './TaskTitle.css';
 
-const TaskTitle = ({ title }) => {
+const TaskTitle = ({ title, children }) => {
   return (
     <div className='TaskTitle'>
-        {title}
+        <p className='task-title-title'>{title}</p>
+        {children}  
     </div>
-  )
+  );
 }
 
 export default TaskTitle;

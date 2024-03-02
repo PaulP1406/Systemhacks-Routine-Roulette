@@ -1,40 +1,37 @@
+// Schedule.js
 import React, { useState } from 'react';
-import DraggableList from 'react-draggable-list';
-import TaskTitle from './TaskTitle';
-import TaskBar from './TaskBar';
+import TaskManager from './TaskManager';
+import './Schedule.css';
+import ChaosButtonGlobal from './ChaosButtonGlobal';
 
 const ScheduleComponent = () => {
-  const [tasks, setTasks] = useState([
-    { id: 1, name: 'Morning Task', timeOfDay: 'MORNING' },
-    { id: 2, name: 'Afternoon Task', timeOfDay: 'AFTERNOON' },
-    { id: 3, name: 'Evening Task', timeOfDay: 'EVENING' },
-    // Add as many tasks as you need
-  ]);
+  const [morningTasks, setMorningTasks] = useState([]);
+  const [afternoonTasks, setAfternoonTasks] = useState([]);
+  const [eveningTasks, setEveningTasks] = useState([]);
 
-  const onListChange = (newList) => {
-    setTasks(newList);
+  // Shuffle function that works on any tasks array
+  const shuffleTasks = (tasks) => {
+    const shuffled = [...tasks];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
   };
 
-  const listItem = ({ item, itemSelected, dragHandle }) => {
-    return (
-      <div>
-        <TaskTitle title={item.timeOfDay} />
-        <div {...dragHandle}>
-          <TaskBar name={item.name} />
-        </div>
-      </div>
-    );
+  // Function to shuffle all tasks
+  const handleShuffleAll = () => {
+    setMorningTasks(shuffleTasks(morningTasks));
+    setAfternoonTasks(shuffleTasks(afternoonTasks));
+    setEveningTasks(shuffleTasks(eveningTasks));
   };
 
   return (
     <div className="Schedule">
-      <DraggableList
-        itemKey="id"
-        template={listItem}
-        list={tasks}
-        onMoveEnd={onListChange}
-        container={() => document.body}
-      />
+      <TaskManager title="Morning" tasks={morningTasks} setTasks={setMorningTasks} />
+      <TaskManager title="Afternoon" tasks={afternoonTasks} setTasks={setAfternoonTasks} />
+      <TaskManager title="Evening" tasks={eveningTasks} setTasks={setEveningTasks} />
+      <ChaosButtonGlobal onShuffle={handleShuffleAll} />
     </div>
   );
 };

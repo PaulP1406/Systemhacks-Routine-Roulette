@@ -1,0 +1,61 @@
+/* TaskManager.css */
+.task-manager {
+    background-color: #333; 
+    border-radius: 8px; /* Rounded corners for the container */
+    padding: 20px; /* Spacing inside the container */ 
+    max-width: 600px; /* Maximum width of the task manager */
+    margin: 20px auto; /* Center the task manager */
+  }
+  
+  .task-title {
+    font-size: 1.5rem; /* Title size */
+    color: #fff; /* Title text color */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: left; /* Align title text to the left */
+  }
+  
+  .task-bar {
+    background-color: #f0f0f0; /* Light grey background for task bars */
+    border: 1px solid #ddd; /* Border for task bars */
+    border-radius: 4px; /* Rounded corners for task bars */
+    padding: 10px; /* Padding inside task bars */
+    margin-bottom: 10px; /* Space between task bars */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between task name and delete button */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .new-task-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between input and add button */
+    margin-top: 20px; /* Space above the input field */
+  }
+  
+  .new-task-input {
+    flex-grow: 1; /* Input takes up available space */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ddd; /* Border for input */
+    border-radius: 4px; /* Rounded corners for input */
+    margin-right: 10px; /* Space between input and button */
+  }
+  
+  .add-task-btn, .delete-task-btn {
+    background-color: #5cb85c; /* Green background for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* No border for buttons */
+    border-radius: 4px; /* Rounded corners for buttons */
+    padding: 10px 15px; /* Padding inside buttons */
+    cursor: pointer; /* Cursor indicates button */
+    text-align: center; /* Center text inside buttons */
+  }
+  
+  .add-task-btn:hover, .delete-task-btn:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+  }
+  
+  /* Additional styles for dragging state */
+  .task-bar.dragging {
+    background-color: #e0e0e0; /* Different background when dragging */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow for lifted task bars */
+  }
+  

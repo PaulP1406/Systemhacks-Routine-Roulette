@@ -4,7 +4,11 @@ import './Nav.css';
 const Nav = () => {
   return (
     <div className='Nav'>
-        <p className='Nav-title'> Routine Roulette</p>
+      <button className='configBtn'>Settings</button>
+      <p className='Nav-title'> Routine Roulette</p>
+        {/* <div style={{ textAlign: 'left' }}> */}
+        
+        {/* </div> */}
     </div>
   )
 }

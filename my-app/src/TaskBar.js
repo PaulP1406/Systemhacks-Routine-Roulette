@@ -1,21 +1,16 @@
+// TaskBar.js
 import React from 'react';
-import ChaosButtonLocal from './ChaosButtonLocal';
-import './TaskBar.css';
-import { useState } from 'react';
+import './TaskBar.css'; // Make sure you have CSS for TaskBar
 
-const TaskBar = ({ name }) => {
-    const [isChaos, setIsChaos] = useState(false);
-  
-    const toggleChaos = () => {
-      setIsChaos(!isChaos);
-    };
-  
-    return (
-      <div className={`task-bar ${isChaos ? 'chaos' : ''}`}>
-        {name}
-        <ChaosButtonLocal onClick={toggleChaos} isChaos={isChaos} />
-      </div>
-    );
-  };
-  
-  export default TaskBar;
+const TaskBar = ({ name, onDelete }) => {
+  return (
+    <div className="task-bar-content">
+      {name}
+      {/* <button className="delete-task-btn" onClick={onDelete}>
+        Delete
+      </button> */}
+    </div>
+  );
+};
+
+export default TaskBar;

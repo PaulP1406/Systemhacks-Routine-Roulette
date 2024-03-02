@@ -1,3 +1,36 @@
-.Rountine-Roulette {
-    margin-top: none;
+*{
+    font-family: "Lexend", sans-serif;
 }
+
+.Nav{
+    /* background-color: #1E1E1E; */
+    background-color: #333;
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* This will space out your header elements */
+    align-items: center;
+}
+
+.Nav-title{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 20%;
+    height: auto;
+    font-size: large;
+    padding: 30px;
+    margin: auto;
+}
+
+.configBtn {
+    background-color: grey;
+    color: white;
+    padding: 20px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+

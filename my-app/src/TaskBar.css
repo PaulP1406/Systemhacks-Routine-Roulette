@@ -1,17 +1,37 @@
 /* TaskBar.css */
 .task-bar {
-    background-color: #f0f0f0; /* Replace with the actual color from the design */
-    border-radius: 4px;
-    padding: 10px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .chaos {
-    background-color: #ffc0cb; /* Replace with the actual 'chaos' color from the design */
-  }
-  
-  /* Add other styles for the chaos button when active, etc. */
-  
+  margin-bottom: 8px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #ff6347; /* Red background for delete button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #d9534f; /* Slightly darker red on hover */
+}
+
+.task-bar.dragging {
+  /* Optional styles for when the task bar is being dragged */
+  background-color: #e0e0e0;
+}
+
+.task-bar-content {
+  /* Styles for the content within a task bar */
+}
+
+.delete-task-btn {
+  /* Styles for the delete button */
+}
+
+
+/* Add more styling here to match the design */

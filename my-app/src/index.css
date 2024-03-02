@@ -9,7 +9,8 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  bacjground-color: #333;
+  /* monospace; */
 }
 
 .Schedule {
@@ -22,7 +23,3 @@ code {
   height: 12vh;
 }
 
-.Nav {
-  background-color: #333;
-  height: 12vh;
-}
