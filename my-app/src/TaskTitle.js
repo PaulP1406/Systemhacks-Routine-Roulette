@@ -1,8 +1,12 @@
 import React from 'react'
 
+
 const TaskTitle = () => {
   return (
-    <div>TaskTitle</div>
+    <div className='TaskTitle'>
+        TaskTitle
+    
+    </div>
   )
 }
 

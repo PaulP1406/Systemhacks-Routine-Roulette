@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChaosButtonGlobal = () => {
   return (
-    <div>ChaosButtonGlobal</div>
+    <div className='ChaosButtonGlobal'>ChaosButtonGlobal</div>
   )
 }
 

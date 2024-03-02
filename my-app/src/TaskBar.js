@@ -1,8 +1,11 @@
 import React from 'react'
+import ChaosButtonLocal from './ChaosButtonLocal'
 
 const TaskBar = () => {
   return (
-    <div>TaskBar</div>
+    <div className='TaskBar'>TaskBar
+    <ChaosButtonLocal />
+    </div>
   )
 }
 

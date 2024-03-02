@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChaosButtonLocal = () => {
   return (
-    <div>ChaosButtonLocal</div>
+    <div className='ChaosButtonLocal'>ChaosButtonLocal</div>
   )
 }
 
