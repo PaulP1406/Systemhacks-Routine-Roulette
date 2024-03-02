@@ -13,12 +13,12 @@ code {
 }
 
 .Schedule {
-  background-color: blue;
+  background-color: grey;
   height: 76vh;
 }
 
 .ChaosButtonGlobal {
-  background-color: red;
+  background-color: #333;
   height: 12vh;
 }
 
