@@ -18,4 +18,4 @@ We successfully implemented the dragging feature of the web-app, where elements 
 We learned on how to work as a team to prevent merging conflicts by using liveshare. As well as how to debug efficiently on ReactJS and using the external library react beautiful drag-n-drop. 
 
 ## What's next for Routine Roulette
-Routine Roulette will definitely be launch as a mobile app in the future. 
+Routine Roulette will definitely be launched as a mobile app in the future. Perhaps with additions in the settings menu like "light mode", a ChatGPT API to recommend alternatives for the schedule, and potentially being able to plan further ahead, in the week. 
