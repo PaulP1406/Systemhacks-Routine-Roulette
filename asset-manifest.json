@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Systemhacks-Routine-Roulette/static/css/main.6c5a5383.css",
+    "main.js": "/Systemhacks-Routine-Roulette/static/js/main.7091e226.js",
+    "static/js/453.ed3810f9.chunk.js": "/Systemhacks-Routine-Roulette/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Systemhacks-Routine-Roulette/index.html",
+    "main.6c5a5383.css.map": "/Systemhacks-Routine-Roulette/static/css/main.6c5a5383.css.map",
+    "main.7091e226.js.map": "/Systemhacks-Routine-Roulette/static/js/main.7091e226.js.map",
+    "453.ed3810f9.chunk.js.map": "/Systemhacks-Routine-Roulette/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c5a5383.css",
+    "static/js/main.7091e226.js"
+  ]
+}
