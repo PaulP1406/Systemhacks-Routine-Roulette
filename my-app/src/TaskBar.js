@@ -1,6 +1,6 @@
 // TaskBar.js
 import React from 'react';
-import './TaskBar.css'; // Make sure you have CSS for TaskBar
+import './TaskBar.css';
 
 const TaskBar = ({ name }) => {
   return (

@@ -9,7 +9,7 @@ const ScheduleComponent = () => {
   const [afternoonTasks, setAfternoonTasks] = useState([]);
   const [eveningTasks, setEveningTasks] = useState([]);
 
-  // Shuffle function that works on any tasks array
+  
   const shuffleTasks = (tasks) => {
     const shuffled = [...tasks];
     for (let i = shuffled.length - 1; i > 0; i--) {

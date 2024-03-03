@@ -10,11 +10,11 @@ const TaskManager = ({ title, tasks, setTasks }) => {
   const addTask = () => {
     if (newTaskName.trim() !== '') {
       const newTask = {
-        id: `task-${new Date().getTime()}`, // Unique ID for each task
+        id: `task-${new Date().getTime()}`, 
         name: newTaskName
       };
       setTasks((prevTasks) => [...prevTasks, newTask]);
-      setNewTaskName(''); // Reset the input field
+      setNewTaskName(''); 
     }
   };
 

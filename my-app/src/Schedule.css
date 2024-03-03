@@ -3,9 +3,9 @@
 }
 .Schedule {
     display: flex;
-    flex-direction: column; /* stack items vertically */
-    justify-content: center; /* align vertical */
-    align-items: center; /* align horizontal when in column mode */
-    height: 100%; /* or any specific height */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
     background-color: #2C2C2C;
 }
