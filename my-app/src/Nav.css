@@ -13,7 +13,6 @@
 }
 
 .Nav-title{
-    text-align: center;
     color: white;
     width: 20%;
     height: auto;
@@ -21,12 +20,14 @@
     font-family: monospace;
     padding: 30px;
     margin: auto;
+    text-align: center
+    
 }
 
 .configBtn {
     background-color: grey;
     color: white;
-    padding: 20px 20px;
+    padding: 10px 10px;
     border: 2px solid black;
     border-radius: 5px;
     cursor: pointer;
@@ -34,5 +35,9 @@
     position: absolute;
     top: 0%;
     left: 0%;
+}
+
+.configBtn:hover{
+    background-color: black;
 }
 
