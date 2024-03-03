@@ -53,7 +53,7 @@ const TaskManager = ({ title, tasks, setTasks }) => {
                     {...provided.dragHandleProps}
                     className={snapshot.isDragging ? 'task-bar dragging' : 'task-bar'}
                   >
-                    <TaskBar name={task.name} />
+                    <TaskBar name={task.name}/>
                     <button
                       className="delete-task-btn"
                       onClick={() => deleteTask(task.id)}

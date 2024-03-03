@@ -2,5 +2,10 @@
     font-family: "Lexend", sans-serif;
 }
 .Schedule {
-    color: grey;
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    justify-content: center; /* align vertical */
+    align-items: center; /* align horizontal when in column mode */
+    height: 100%; /* or any specific height */
+    background-color: #2C2C2C;
 }

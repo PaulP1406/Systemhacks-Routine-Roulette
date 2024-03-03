@@ -1,6 +1,9 @@
 /* TaskManager.css */
+*{
+  font-family: "Lexend", sans-serif;
+}
 .task-manager {
-    background-color: #333;
+    background-color: #1C1C1C ;
     border-radius: 8px; /* Rounded corners for the container */
     padding: 20px; /* Spacing inside the container */ 
     max-width: 600px; /* Maximum width of the task manager */
@@ -9,9 +12,12 @@
   
   .task-title {
     font-size: 1.5rem; /* Title size */
-    color: #fff; /* Title text color */
+    color: black; /* Title text color */
     margin-bottom: 20px; /* Space below the title */
     text-align: left; /* Align title text to the left */
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
   }
   
   .task-bar {
@@ -37,6 +43,12 @@
     border: 1px solid #ffffff; /* Border for input */
     border-radius: 4px; /* Rounded corners for input */
     margin-right: 10px; /* Space between input and button */
+    color:white;
+  }
+
+ ::placeholder {
+    color: white;
+    
   }
   
   .add-task-btn, .delete-task-btn {
@@ -49,17 +61,18 @@
     text-align: center; /* Center text inside buttons */
   }
   
-  .add-task-btn:hover, .delete-task-btn:hover {
-    background-color: #4cae4c; /* Darker green on hover */
+  .add-task-btn:hover{
+    background-color: #4CAF50 ; 
   }
   
   .delete-task-btn:hover {
-    background-color: red; /* Darker green on hover */
+    background-color: #FF6666;
   }
 
   /* Additional styles for dragging state */
   .task-bar.dragging {
-    background-color: #e0e0e0; /* Different background when dragging */
+    background-color: #1888aa;
+    border: none; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow for lifted task bars */
   }
   

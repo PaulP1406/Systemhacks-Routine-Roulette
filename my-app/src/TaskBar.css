@@ -7,31 +7,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.delete-btn-btn {
-  padding: 5px 10px;
-  background-color: red; /* Red background for delete button */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.delete-btn-btn:hover {
-  background-color: #d9534f; /* Slightly darker red on hover */
-}
-
-.task-bar.dragging {
-  /* Optional styles for when the task bar is being dragged */
-  background-color: #e0e0e0;
-}
 
 .task-bar-content {
-  /* Styles for the content within a task bar */
+  background-color: #f4f4f4;
 }
 
-.delete-task-btn {
-  /* Styles for the delete button */
+.task-bar-content.dragging {
+  background-color: black;
 }
-
-
-/* Add more styling here to match the design */

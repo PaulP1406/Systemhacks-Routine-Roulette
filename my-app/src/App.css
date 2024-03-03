@@ -1,7 +1,10 @@
+*{
+  font-family: "Lexend", sans-serif;
+}
 
 .App {
   text-align: center;
-  background-color: gray;
+  background-color: #2C2C2C;
 }
 
 .App-logo {

@@ -28,7 +28,6 @@ const ScheduleComponent = () => {
 
   return (
     <div className="Schedule">
-      <h1>Schedule</h1>
       <TaskManager title="Morning" tasks={morningTasks} setTasks={setMorningTasks} />
       <TaskManager title="Afternoon" tasks={afternoonTasks} setTasks={setAfternoonTasks} />
       <TaskManager title="Evening" tasks={eveningTasks} setTasks={setEveningTasks} />
